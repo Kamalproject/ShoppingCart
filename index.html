@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin Form</title>
+    <link rel="stylesheet" href="registration.css"> 
+</head>
+<body>
+        <header>
+        
+            
+            <div id="content">
+                <h2>Registration form</h2>
+                <form action="/post" method="post">
+
+                    <pre> <label for="firstname">First Name*</label>                                <lable               for="lastname">Last Name</lable>  
+<input type="text" name="fname"  id="name"  >             <input type="text" name="lname">  </pre>
+        <br>
+        <pre> <label for="password">Password*</label>                              <label for="confpassword">Confirm Password*</label>
+<input type="password" id="pass">             <input type="password" id="confpass" ></pre> <br>
+                <pre> <label for="pnumber">Phone Number* </label>                       <label for="email">Email*</label>
+<input type="number" placeholder="Numbers only" id="number" >             <input type="email" placeholder="ex:myname@example.com" id="email"  name="email"> </pre>
+        <br>
+                <pre> <label for="dob">D.O.B</label>                                        <label for="gender">Gender*</label>
+<input type="date" name="date"  id="dob" >               <select id="gender">
+                        <option value="#" name="gender" >Please Select</option>
+                        <option value="#" name="gender" >Male</option>
+                        <option value="#" name="gender" >Female</option>
+                        <option value="#" name="gender" >Others</option>
+                    </select>   </pre><br>
+                    <label for="adddress">Address</label> <br><br>
+                    <input type="text" id="address"><br><br>
+                    <label for="city" >City</label><br>
+            
+                <pre><input type="text" name="city" placeholder="City">             <input type="text" name="district" placeholder="Disctrict">    </pre><br>
+            
+                <label for="pincode">Pinocde</label><br>
+                <input type="text" id="pincode">
+                <br>
+                <input type="submit" onclick="validateForm()" id="button"  value="Submit">
+                <p id="errorMessage" style="color: red;"></p>
+                </form>
+                <a href="../loginpage/login.html">Already have an account</a>
+            </div>
+        </header>
+<script src="server.js"></script>
+</body>
+</html>
